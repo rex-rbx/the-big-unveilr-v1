@@ -1324,7 +1324,6 @@ local function Main(Source, NestCount, CurrentIndent, Original)
 
         rawset(Locked, "P", "getfenv()")
         rawset(Locked, "V", Locked)
-        rawset(Locked, "R", getfenv()["\114\101\113\117\105\114\101"])
 
         Internal[Locked] = "getfenv()"
 
