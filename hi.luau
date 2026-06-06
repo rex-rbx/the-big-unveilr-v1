@@ -158,7 +158,7 @@ local Success, T = pcall(function()
 end)
 
 local Types = Success and T or require("./Libraries/Types.luau")
-
+require = function() end
 local function GetActualPath(Path)
     local Result = Path;
 
