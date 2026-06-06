@@ -1058,7 +1058,7 @@ local function Main(Source, NestCount, CurrentIndent, Original)
         __NEQ = FastEq("~="),
         __EQ = FastEq("=="),
         CHECKLEN = function(a)
-            local A = IsInternal(A)
+            local A = IsInternal(a)
             local Len = #a
 
             if A then
